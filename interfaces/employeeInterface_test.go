@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test(t *testing.T) {
+func TestEmployeeInterface(t *testing.T) {
 	type testCase struct {
 		emp      employee
 		expected int
