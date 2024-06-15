@@ -28,13 +28,13 @@ package interfaces
 
 import "fmt"
 
-func (e email) cost() int {
-	length := len(e.body)
-	if e.isSubscribed {
-		return length * 2
-	}
-	return length * 5
-}
+// func (e email) cost() int {
+// 	length := len(e.body)
+// 	if e.isSubscribed {
+// 		return length * 2
+// 	}
+// 	return length * 5
+// }
 
 func (e email) format() string {
 	if e.isSubscribed {
@@ -43,15 +43,15 @@ func (e email) format() string {
 	return fmt.Sprintf("'%s' | Not Subscribed", e.body)
 }
 
-type expense interface {
-	cost() int
-}
+// type expense interface {
+// 	cost() int
+// }
 
 type formatter interface {
 	format() string
 }
 
-type email struct {
-	isSubscribed bool
-	body         string
-}
+// type email struct {
+// 	isSubscribed bool
+// 	body         string
+// }
