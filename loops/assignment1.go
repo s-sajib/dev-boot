@@ -1,6 +1,7 @@
 package loops
 
-/**
+/*
+*
 At Textio we have a dynamic formula for determining how much a batch of bulk messages costs to send.
 Complete the bulkSend() function.
 
